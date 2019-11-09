@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Messaging</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <nav class="navbar d-flex justify-content-space-between align-items-center">
+      <div class="navbar_brand d-mb-flex w-mb-100">
+         <a href="" class="d-block">
+            Dentlify
+         </a>
+         <button id="toggle-btn" class="navbar_btn" onclick="toggle()" ><i class="fa fa-align-justify"></i></button>
+      </div>
+      <ul class="navbar_right d-flex">
+         <li class="navbar_right_item">
+            <a class="border-default" href="">
+               <i class="fa fa-bell"></i>
+            </a>
+         </li>
+         <li class="navbar_right_item">
+            <a class="border-default" href="">
+               <i class="fa fa-comments"></i>
+            </a>
+         </li>
+         <li class="navbar_right_item">
+            <a class="border-default" href="">
+               <i class="fa fa-user"></i>
+            </a>
+         </li>
+      </ul>
+      <ul class="nav sidebar_collapse">
+         <li class="w-mb-100"><a class="nav_link" href="">Dashboard</a></li>
+         <li class="w-mb-100"><a class="nav_link" href="">Providers</a></li>
+         <li class="w-mb-100"><a class="nav_link" href="">Cases</a></li>
+         <li class="w-mb-100"><a class="nav_link" href="">Jobs</a></li>
+         <li class="w-mb-100"><a class="nav_link" href="">Messages</a></li>
+         <li class="w-mb-100"><a class="nav_link" href="">Settings</a></li>
+         <li class="w-mb-100"><a class="nav_link" href="">Logout</a></li>
+      </ul>
+   </nav>
+
+   <div class="chat_container d-flex w-mb-100">
+      <div class="conversation_area d-flex w-mb-100 h-mb-100">
+         <div class="search border-default d-flex">
+            <i class="fa fa-search"></i>
+            <input class="search_input w-100" type="text" placeholder="search">
+         </div>
+         <ul class="tabs d-flex">
+            <li class="tab_item active">Cases</li>
+            <li class="tab_item">Users</li>
+         </ul>
+         <div class="list_participants border-default">
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+            <a onclick="handleClick()" class="participant d-block">
+               <h1 class="participant_id">#10101010</h1>
+               <p class="latest_sent_time"><i>Yesterday</i> 10:30</p>
+               <p class="latest_message max-lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio
+                  quas veniam hic iure totam
+                  voluptates omnis qui ullam repudiandae fuga molestiae perspiciatis, ducimus, sapiente ab enim, at
+                  eos. Cum.</p>
+            </a>
+         </div>
+      </div>
+      <div class="chat_area d-flex justify-content-space-between d-mb-none w-mb-100 h-mb-100">
+         <div class="title-bar d-none d-mb-flex justify-content-space-between align-items-center">
+            <button onclick="clickBack()" class="d-block"><i class="fa fa-chevron-left"></i> All Chat</button>
+            <h1>#123123</h1>
+         </div>
+         <div class="chat_content border-default">
+            <p>no more messages</p>
+            <div class="messages border-default my_message">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui quos quam exercitationem quisquam cumque
+               autem veritatis earum labore vitae.
+            </div>
+            <div class="messages border-default another_message">
+               <h1>Bill Gates 10 min ago</h1>
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="messages border-default my_message">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui quos quam exercitationem quisquam cumque
+               autem veritatis earum labore vitae.
+            </div>
+            <div class="messages border-default another_message">
+               <h1>Bill Gates 10 min ago</h1>
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="messages border-default my_message">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui quos quam exercitationem quisquam cumque
+               autem veritatis earum labore vitae.
+            </div>
+            <div class="messages border-default my_message">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui quos quam exercitationem quisquam cumque
+               autem veritatis earum labore vitae.
+            </div>
+            <div class="messages border-default another_message">
+               <h1>Bill Gates 10 min ago</h1>
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="messages border-default my_message">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui quos quam exercitationem quisquam cumque
+               autem veritatis earum labore vitae.
+            </div>
+            <div class="messages border-default another_message">
+               <h1>Bill Gates 10 min ago</h1>
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="messages border-default my_message">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui quos quam exercitationem quisquam cumque
+               autem veritatis earum labore vitae.
+            </div>
+            <div class="messages border-default another_message">
+               <h1>Bill Gates 10 min ago</h1>
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="messages border-default my_message">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui quos quam exercitationem quisquam cumque
+               autem veritatis earum labore vitae.
+            </div>
+            <div class="messages border-default another_message">
+               <h1>Bill Gates 10 min ago</h1>
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+         </div>
+         <div class="chat_form d-flex">
+            <div class="message_input border-default">
+               <textarea class="input_area w-100 h-100" placeholder="Type your message here..."></textarea>
+               <i class="icon_attach border-default fa fa-paperclip"></i>
+            </div>
+            <div class="button_container d-flex justify-content-center align-items-center">
+               <button class="btn btn_submit d-block border-default">
+                  <i class="fa fa-paper-plane"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="index.js"></script>
+
+</body>
+
+</html>
